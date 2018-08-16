@@ -1,0 +1,12 @@
+BridgePhase Convenience Store
+-----------------------------
+Total Products Bought: 17
+
+3 Apple red @ 1.00: 3.00
+2 Milk @ 4.50: 9.00
+12 Peach @ 0.75: 9.00
+-----------------------------
+Total: $21.00
+Paid: $25
+Change: $4.00
+-----------------------------

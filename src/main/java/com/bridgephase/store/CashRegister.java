@@ -133,10 +133,12 @@ public class CashRegister {
 		System.out.println("PROBLEM");
 		
 		try {
-			os.write(setUp.getBytes("UTF-8"));
+			os.write(setUp.getBytes());
+			os.flush();
 			os.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			System.out.println("PROBLEM");
 			e.printStackTrace();
 		}
 		

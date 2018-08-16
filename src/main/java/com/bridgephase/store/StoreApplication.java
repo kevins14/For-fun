@@ -1,6 +1,7 @@
 package com.bridgephase.store;
 
 import java.io.ByteArrayInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -22,7 +23,7 @@ import com.bridgephase.store.interfaces.IInventory;
  * @author Jaime Garcia Ramirez (jramirez@bridgephase.com)
  */
 public class StoreApplication {
-
+	private static final String OUTPUT_FILE = "C:\\Users\\Desktop\\testFile.txt";
 	/**
 	 * This is the main entry point to this application.
 	 * 
@@ -58,7 +59,7 @@ public class StoreApplication {
 			
 			register.pay(new BigDecimal(25.00));
 			
-			OutputStream os = null;
+			OutputStream os = new FileOutputStream(OUTPUT_FILE);
 			register.printReceipt(os);
 			
 		} catch (Exception e) {
