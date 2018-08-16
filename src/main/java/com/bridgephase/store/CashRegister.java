@@ -130,7 +130,6 @@ public class CashRegister {
 						"\nChange: $" + pay(this.cashAmount) + 
 						"\n-----------------------------\n";
 		System.out.println(setUp);
-		System.out.println("PROBLEM");
 		
 		try {
 			os.write(setUp.getBytes());
